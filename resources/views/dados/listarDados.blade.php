@@ -1,5 +1,5 @@
 
-@extends('home')
+@extends('layouts.app')
 @section('title','Dados do Packet Tracer' )
 @section('content')
 
