@@ -23,6 +23,18 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
+        Schema::create('dados', function (Blueprint $table) {
+            $table->id();
+            $table->integer('temperatura')->nullable();
+            $table->integer('humidade')->nullable();
+            $table->integer('percBateria')->nullable();
+            $table->string('claridade')->nullable();
+            $table->boolean('haMovimento')->nullable();
+            $table->boolean('ledAceso')->nullable();
+            $table->timestamps();
+        });
+
+
     }
 
     /**
@@ -33,5 +45,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('dados');
     }
 }
