@@ -28,7 +28,7 @@ class DadosController extends Controller
 
         $query = Dados::query();
 
-        $dados = $query->orderBy('dados_id','desc')->paginate(10);
+        $dados = $query->orderBy('id','desc')->paginate(10);
 
         return view('dados.listarDados',compact('dados'));
     }
