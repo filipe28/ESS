@@ -1,5 +1,5 @@
 
-@extends('home')
+@extends('layouts.')
 @section('title','Users' )
 @section('content')
 

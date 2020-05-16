@@ -1,4 +1,4 @@
-@extends('layout_admin')
+@extends('layout.app')
 @section('title', 'Novo Utilizador' )
 @section('content')
     <form method="POST" action="{{route('admin.users.store')}}" class="form-group">
