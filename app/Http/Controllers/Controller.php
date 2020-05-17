@@ -8,6 +8,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Khill\Lavacharts\Lavacharts;
 
+require 'vendor/autoload.php';
+
 $temperatures = Lava::DataTable();
 
 $temperatures->addDateColumn('Date')
